@@ -31,7 +31,22 @@
 <body>
 <div class="w3-top">
     <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-        <a cef="#" class="w3-bar-item w3-button">Username</a>
+        <a class="w3-bar-item w3-button">Touch by Anne</a>
+        <div class="w3-right w3-hide-small">
+            <a href="#about" class="w3-bar-item w3-button">About</a>
+            <a href="#products" class="w3-bar-item w3-button">Products</a>
+            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            <a href="#account" class="w3-bar-item w3-button" onclick="openAccount()">Account</a>
+        </div>
+    </div>
+</div>
+<div id="account" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width: 600px;">
+        <div class="w3-container">
+            <span onclick="document.getElementById('account').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <h1>My Account</h1>
+            <hr>
+            <a href="#" class="w3-bar-item w3-button">Username</a>
             <a href="#" class="w3-bar-item w3-button">Cart</a>
             <div class="w3-dropdown-hover">
                 <button class="w3-button">Purchases</button>
